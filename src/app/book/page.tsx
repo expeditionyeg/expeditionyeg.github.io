@@ -277,7 +277,7 @@ function BookingContent() {
             <div>
               <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Planning a Special Occasion?</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                Our custom bookings are perfect for **corporate team building**, **private date nights**, or **birthday parties**. Request a custom date below:
+                Our custom bookings are perfect for <strong className="font-semibold text-gray-900 dark:text-white">corporate team building</strong>, <strong className="font-semibold text-gray-900 dark:text-white">private date nights</strong>, or <strong className="font-semibold text-gray-900 dark:text-white">birthday parties</strong>. Request a custom date below:
               </p>
               <div className="grid grid-cols-1 gap-3">
                 {allTours.filter(t => t.enabled).map((type) => (

@@ -9,6 +9,22 @@ export async function generateStaticParams() {
   }));
 }
 
+function formatDescription(text: string) {
+  return text.split('\n\n').map((paragraph, pIdx) => {
+    const parts = paragraph.split('**');
+    return (
+      <p key={pIdx} className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-6 last:mb-0">
+        {parts.map((part, idx) => {
+          if (idx % 2 === 1) {
+            return <strong key={idx} className="font-semibold text-gray-900 dark:text-white">{part}</strong>;
+          }
+          return part;
+        })}
+      </p>
+    );
+  });
+}
+
 export default async function TourDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const tour = tours.find((t) => t.id === slug && t.enabled);
@@ -67,9 +83,9 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                 <Info className="h-7 w-7 mr-3 text-blue-600 dark:text-blue-400" />
                 About this tour
               </h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                {tour.longDescription}
-              </p>
+              <div>
+                {formatDescription(tour.longDescription)}
+              </div>
             </section>
 
             {/* Itinerary */}

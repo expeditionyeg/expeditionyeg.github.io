@@ -66,7 +66,7 @@ export default function ToursPage() {
       <div className="mt-24 bg-blue-900 rounded-3xl p-12 text-white text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Planning a Special Event?</h2>
         <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-          From romantic **date nights** to large-scale **corporate team building**, we can customize any tour to fit your group&apos;s needs. Let us handle the details while you enjoy the ride.
+          From romantic <strong className="font-semibold text-white">date nights</strong> to large-scale <strong className="font-semibold text-white">corporate team building</strong>, we can customize any tour to fit your group&apos;s needs. Let us handle the details while you enjoy the ride.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-6">
           <Link 

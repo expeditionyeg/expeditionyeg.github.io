@@ -64,7 +64,7 @@ export default function PrivacyPage() {
                     *Personal Information Protection and Electronic Documents Act* (PIPEDA).
                   </p>
                   <p>
-                    We value transparency: **we do not track you with marketing cookies or sell your personal data.** 
+                    We value transparency: <strong className="font-semibold text-gray-900 dark:text-white">we do not track you with marketing cookies or sell your personal data.</strong> 
                     We collect only the information necessary to organize, run, and legally protect our tours.
                   </p>
                 </div>
@@ -87,10 +87,10 @@ export default function PrivacyPage() {
                     When you book a tour, complete our contact form, or sign our liability waiver, we collect details including:
                   </p>
                   <ul className="list-disc pl-5 space-y-2">
-                    <li>**Identity Details:** First and last name, age, and signature.</li>
-                    <li>**Contact Information:** Email address and phone number.</li>
-                    <li>**Logistical Details:** Bike size requirements (such as height) to prepare your equipment.</li>
-                    <li>**Safety Information:** Emergency contact names, phone numbers, and relationship to you.</li>
+                    <li><strong className="font-semibold text-gray-900 dark:text-white">Identity Details:</strong> First and last name, age, and signature.</li>
+                    <li><strong className="font-semibold text-gray-900 dark:text-white">Contact Information:</strong> Email address and phone number.</li>
+                    <li><strong className="font-semibold text-gray-900 dark:text-white">Logistical Details:</strong> Bike size requirements (such as height) to prepare your equipment.</li>
+                    <li><strong className="font-semibold text-gray-900 dark:text-white">Safety Information:</strong> Emergency contact names, phone numbers, and relationship to you.</li>
                   </ul>
                 </div>
               </div>
@@ -211,14 +211,14 @@ export default function PrivacyPage() {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">7. Information Sharing</h2>
                 <div className="text-gray-600 dark:text-gray-300 space-y-4">
                   <p>
-                    We maintain a strict stance on data distribution. **We will never sell, trade, rent, or lease your personal information to third parties.**
+                    We maintain a strict stance on data distribution. <strong className="font-semibold text-gray-900 dark:text-white">We will never sell, trade, rent, or lease your personal information to third parties.</strong>
                   </p>
                   <p>
                     We will only disclose your information to outside parties in the following exceptional situations:
                   </p>
                   <ul className="list-disc pl-5 space-y-2">
-                    <li>**Medical Emergencies:** In the event of an accident, health issue, or injury during a tour, we may share your contact info, medical declarations, and emergency contact details with medical responders or healthcare providers.</li>
-                    <li>**Legal Compliance:** If required by law, court order, or government regulation.</li>
+                    <li><strong className="font-semibold text-gray-900 dark:text-white">Medical Emergencies:</strong> In the event of an accident, health issue, or injury during a tour, we may share your contact info, medical declarations, and emergency contact details with medical responders or healthcare providers.</li>
+                    <li><strong className="font-semibold text-gray-900 dark:text-white">Legal Compliance:</strong> If required by law, court order, or government regulation.</li>
                   </ul>
                 </div>
               </div>
@@ -245,8 +245,8 @@ export default function PrivacyPage() {
                   </p>
                   <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl border border-gray-100 dark:border-gray-800 space-y-2 max-w-md">
                     <p className="font-bold text-gray-900 dark:text-white">Expedition YEG</p>
-                    <p className="text-sm">**Email:** expeditionyeg@gmail.com</p>
-                    <p className="text-sm">**Phone:** (780) 966-2257</p>
+                    <p className="text-sm"><strong className="font-semibold text-gray-900 dark:text-white">Email:</strong> expeditionyeg@gmail.com</p>
+                    <p className="text-sm"><strong className="font-semibold text-gray-900 dark:text-white">Phone:</strong> (780) 966-2257</p>
                     <p className="text-sm text-gray-500">Edmonton, Alberta, Canada</p>
                   </div>
                 </div>
