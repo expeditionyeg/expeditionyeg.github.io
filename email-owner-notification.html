@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      .container { font-family: sans-serif; padding: 20px; color: #333; line-height: 1.5; }
+      .header { border-bottom: 2px solid #2563eb; padding-bottom: 10px; margin-bottom: 20px; }
+      .section { margin-bottom: 20px; background: #f9fafb; padding: 15px; border-radius: 8px; }
+      .label { font-weight: bold; color: #666; width: 140px; display: inline-block; }
+      .button { 
+        background-color: #2563eb; 
+        color: white; 
+        padding: 14px 28px; 
+        text-decoration: none; 
+        border-radius: 6px; 
+        display: inline-block; 
+        font-weight: bold; 
+        margin-top: 10px;
+      }
+      .footer { font-size: 12px; color: #999; margin-top: 40px; border-top: 1px solid #eee; pt: 10px; }
+      h2 { margin: 0; color: #1e40af; }
+      h3 { margin-top: 0; color: #374151; font-size: 16px; text-transform: uppercase; letter-spacing: 0.05em; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <? if (isUnscheduled) { ?>
+          <h2>Private Booking Request</h2>
+        <? } else { ?>
+          <h2>New Booking Request</h2>
+        <? } ?>
+      </div>
+
+      <div class="section">
+        <h3>Tour Information</h3>
+        <p><span class="label">Reference ID:</span> <code><?= bookingId ?></code></p>
+        <p><span class="label">Tour Type:</span> <?= tourName ?></p>
+        <? if (!isUnscheduled) { ?>
+          <p><span class="label">Scheduled Date:</span> <?= tourDate ?></p>
+        <? } else { ?>
+          <p><span class="label">Desired Date:</span> <?= desiredDate ?></p>
+          <p><span class="label">Preferred Time:</span> <?= preferredTime ?></p>
+        <? } ?>
+      </div>
+
+      <div class="section">
+        <h3>Customer Details</h3>
+        <p><span class="label">Name:</span> <?= customerName ?></p>
+        <p><span class="label">Email:</span> <?= customerEmail ?></p>
+        <p><span class="label">Phone:</span> <?= phone ?></p>
+        <p><span class="label">Party Size:</span> <?= partySize ?> bikes</p>
+        <p><span class="label">Private Tour:</span> <?= isPrivateRequest ? "Yes" : "No" ?></p>
+        <p><span class="label">Total Cost:</span> <?= totalCost ?></p>
+      </div>
+
+      <? if (!isUnscheduled) { ?>
+        <div class="section" style="background: #eff6ff; border: 1px solid #bfdbfe;">
+          <h3>Action Required</h3>
+          <p>Please review the details above and approve the booking to finalize the schedule and invite the customer.</p>
+          <a href="<?= approvalLink ?>" class="button" style="color: white !important;">Approve Booking & Create Event</a>
+        </div>
+      <? } else { ?>
+        <div class="section" style="background: #fffbeb; border: 1px solid #fef3c7;">
+          <h3>Action Required</h3>
+          <p>Please reach out to the customer directly to coordinate a specific date and time for this custom request.</p>
+        </div>
+      <? } ?>
+
+      <div class="footer">
+        <p>This is an automated notification from your Expedition YEG Booking System.</p>
+        <p>&copy; 2026 Expedition YEG</p>
+      </div>
+    </div>
+  </body>
+</html>

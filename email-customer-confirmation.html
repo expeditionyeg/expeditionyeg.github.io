@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      .container { font-family: sans-serif; padding: 20px; color: #333; line-height: 1.5; }
+      .header { border-bottom: 2px solid #2563eb; padding-bottom: 10px; margin-bottom: 20px; }
+      .section { margin-bottom: 20px; background: #f9fafb; padding: 15px; border-radius: 8px; }
+      .label { font-weight: bold; color: #666; width: 140px; display: inline-block; }
+      .footer { font-size: 12px; color: #999; margin-top: 40px; border-top: 1px solid #eee; pt: 10px; }
+      h2 { margin: 0; color: #1e40af; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Request Received!</h2>
+      </div>
+
+      <p>Hi <?= customerName ?>,</p>
+      <p>Thank you for reaching out to Expedition YEG! We've received your booking request and our team is currently reviewing it.</p>
+
+      <div class="section">
+        <h3>Your Request Summary</h3>
+        <p><span class="label">Reference ID:</span> <code><?= bookingId ?></code></p>
+        <p><span class="label">Tour:</span> <?= tourName ?></p>
+        <? if (!isUnscheduled) { ?>
+          <p><span class="label">Date:</span> <?= tourDate ?></p>
+        <? } else { ?>
+          <p><span class="label">Desired Date:</span> <?= desiredDate ?></p>
+          <p><span class="label">Preferred Time:</span> <?= preferredTime ?></p>
+        <? } ?>
+        <p><span class="label">Party Size:</span> <?= partySize ?> bikes</p>
+        <p><span class="label">Estimated Total:</span> <?= totalCost ?></p>
+      </div>
+
+      <div class="section" style="background: #eff6ff;">
+        <h3>What happens next?</h3>
+        <? if (!isUnscheduled) { ?>
+          <p>We will confirm our availability for this slot. Once approved, you&apos;ll receive a final confirmation email with all the details for your ride.</p>
+        <? } else { ?>
+          <p>Since this is a custom request, one of our guides will reach out to you via email or phone (<?= phone ?>) shortly to coordinate the perfect time for your expedition.</p>
+        <? } ?>
+      </div>
+
+      <div class="section" style="background: #fffbeb; border: 1px solid #fef3c7;">
+        <h3>Action Required: Liability Waiver</h3>
+        <p>To save time at the meeting location, please ensure all participants in your party read and sign our digital liability waiver before the tour starts:</p>
+        <p style="text-align: center; margin-top: 15px;">
+          <a href="https://forms.gle/cB3kpdbVWUZfvQgM6" style="background-color: #f59e0b; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block;">Sign the Waiver</a>
+        </p>
+      </div>
+
+      <p>If you have any questions in the meantime, feel free to reply to this email.</p>
+      
+      <p>Best regards,<br/>The Expedition YEG Team</p>
+
+      <div class="footer">
+        <p>&copy; 2026 Expedition YEG | Edmonton, AB</p>
+      </div>
+    </div>
+  </body>
+</html>

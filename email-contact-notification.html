@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      .container { font-family: sans-serif; padding: 20px; color: #333; line-height: 1.5; }
+      .header { border-bottom: 2px solid #2563eb; padding-bottom: 10px; margin-bottom: 20px; }
+      .section { margin-bottom: 20px; background: #f9fafb; padding: 15px; border-radius: 8px; }
+      .label { font-weight: bold; color: #666; width: 140px; display: inline-block; }
+      .footer { font-size: 12px; color: #999; margin-top: 40px; border-top: 1px solid #eee; padding-top: 10px; }
+      h2 { margin: 0; color: #1e40af; }
+      h3 { margin-top: 0; color: #374151; font-size: 16px; text-transform: uppercase; letter-spacing: 0.05em; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>New Contact Message</h2>
+      </div>
+
+      <div class="section">
+        <h3>Contact Details</h3>
+        <p><span class="label">Name:</span> <?= name ?></p>
+        <p><span class="label">Email:</span> <?= email ?></p>
+      </div>
+
+      <div class="section">
+        <h3>Message</h3>
+        <p style="white-space: pre-wrap;"><?= message ?></p>
+      </div>
+
+      <div class="footer">
+        <p>This is an automated notification from your Expedition YEG Contact Form.</p>
+        <p>&copy; 2026 Expedition YEG</p>
+      </div>
+    </div>
+  </body>
+</html>

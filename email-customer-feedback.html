@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      .container { font-family: sans-serif; padding: 20px; color: #333; line-height: 1.5; max-width: 600px; margin: 0 auto; }
+      .header { border-bottom: 2px solid #2563eb; padding-bottom: 10px; margin-bottom: 20px; }
+      .section { margin-bottom: 25px; }
+      .button { 
+        background-color: #2563eb; 
+        color: white; 
+        padding: 16px 32px; 
+        text-decoration: none; 
+        border-radius: 8px; 
+        display: inline-block; 
+        font-weight: bold; 
+        margin: 10px 0;
+      }
+      .footer { font-size: 12px; color: #999; margin-top: 40px; border-top: 1px solid #eee; padding-top: 10px; }
+      h2 { margin: 0; color: #1e40af; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>How was your ride?</h2>
+      </div>
+
+      <p>Hi <?= customerName ?>,</p>
+      
+      <p>Thank you so much for joining us for the <strong><?= tourName ?></strong> on <?= tourDate ?>! We hope you enjoyed exploring Edmonton's River Valley as much as we enjoyed showing it to you.</p>
+
+      <div class="section">
+        <p>As a small, locally-owned business, your feedback means the world to us. It's how we improve our routes, train our guides, and grow our little operation. Taking just a few minutes to share your thoughts is the biggest compliment you can give us.</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+          <a href="<?= feedbackUrl ?>" class="button" style="color: white !important;">Share Your Feedback</a>
+        </div>
+      </div>
+
+      <p>Thank you again for your support and for being part of the Expedition YEG community. We hope to see you on the trails again soon!</p>
+
+      <div class="footer">
+        <p>Best regards,</p>
+        <p><strong>Matt & the Expedition YEG Team</strong></p>
+        <p>&copy; 2026 Expedition YEG</p>
+      </div>
+    </div>
+  </body>
+</html>

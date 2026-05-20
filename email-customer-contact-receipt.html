@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      .container { font-family: sans-serif; padding: 20px; color: #333; line-height: 1.5; max-width: 600px; margin: 0 auto; }
+      .header { border-bottom: 2px solid #2563eb; padding-bottom: 10px; margin-bottom: 20px; }
+      .section { margin-bottom: 20px; background: #f9fafb; padding: 15px; border-radius: 8px; }
+      .footer { font-size: 12px; color: #999; margin-top: 40px; border-top: 1px solid #eee; padding-top: 10px; }
+      h2 { margin: 0; color: #1e40af; }
+      .quote { font-style: italic; color: #4b5563; border-left: 3px solid #d1d5db; padding-left: 15px; margin: 15px 0; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Message Received!</h2>
+      </div>
+
+      <p>Hi <?= name ?>,</p>
+      
+      <p>Thanks for reaching out to Expedition YEG! This is just a quick note to let you know we've received your message. Our team will review it and get back to you as soon as possible (usually within 24 hours).</p>
+
+      <div class="section">
+        <p><strong>A copy of your message:</strong></p>
+        <div class="quote">
+          <?= message ?>
+        </div>
+      </div>
+
+      <p>In the meantime, feel free to check out our <a href="https://expeditionyeg.github.io/tours">upcoming tours</a> or follow us on social media for updates.</p>
+
+      <div class="footer">
+        <p>This is an automated confirmation from Expedition YEG.</p>
+        <p>&copy; 2026 Expedition YEG</p>
+      </div>
+    </div>
+  </body>
+</html>
