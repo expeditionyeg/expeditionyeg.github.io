@@ -41,9 +41,16 @@ export const tours: Tour[] = [
     gallery: [
       "/mill-creek-sign.jpg",
       "/mill-creek-trail.jpg",
-      "/mill-creek-path.jpg",
       "/mill-creek-trail-sign.jpg",
-      "https://images.unsplash.com/photo-1596048546977-800cfcaa56bc?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "https://images.unsplash.com/photo-1596048546977-800cfcaa56bc?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/river-valley-cruise-1.jpg",
+      "/river-valley-cruise-2.jpg",
+      "/river-valley-cruise-3.jpg",
+      "/river-valley-cruise-4.jpg",
+      "/river-valley-cruise-5.jpg",
+      "/river-valley-cruise-6.jpg",
+      "/river-valley-cruise-7.jpg",
+      "/river-valley-cruise-8.jpg"
     ],
     routeMapUrl: "https://www.google.com/maps/d/embed?mid=1SKRWOIS3PULgFoHS0j5sefIdeknOE8k&ehbc=2E312F",
     itinerary: [
@@ -76,7 +83,15 @@ export const tours: Tour[] = [
       "/mill-creek-trail.jpg",
       "/mill-creek-path.jpg",
       "/mill-creek-trail-sign.jpg",
-      "https://images.unsplash.com/photo-1596048546977-800cfcaa56bc?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "https://images.unsplash.com/photo-1596048546977-800cfcaa56bc?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/river-valley-cruise-1.jpg",
+      "/river-valley-cruise-2.jpg",
+      "/river-valley-cruise-3.jpg",
+      "/river-valley-cruise-4.jpg",
+      "/river-valley-cruise-5.jpg",
+      "/river-valley-cruise-6.jpg",
+      "/river-valley-cruise-7.jpg",
+      "/river-valley-cruise-8.jpg"
     ],
     routeMapUrl: "https://www.google.com/maps/d/embed?mid=1SKRWOIS3PULgFoHS0j5sefIdeknOE8k&ehbc=2E312F",
     itinerary: [
